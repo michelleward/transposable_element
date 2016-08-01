@@ -8,18 +8,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
-
 <meta name="author" content="First Last" />
 
 
 <title>Untitled</title>
 
-<script src="libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="libs/jquery-1.11.0/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
-<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
-<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
-<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<link href="libs/bootstrap-3.3.1/css/united.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.1/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.1/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.1/shim/respond.min.js"></script>
 
 <style type="text/css">
 
@@ -76,34 +75,6 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
-
-
 </head>
 
 <body>
@@ -118,34 +89,12 @@ code {
   color: inherit;
   background-color: rgba(0, 0, 0, 0.04);
 }
-img {
-  max-width:100%;
-  height: auto;
-}
-.tabbed-pane {
-  padding-top: 12px;
-}
-button.code-folding-btn:focus {
-  outline: none;
+img { 
+  max-width:100%; 
+  height: auto; 
 }
 </style>
-
-
 <div class="container-fluid main-container">
-
-<!-- tabsets -->
-<script src="libs/navigation-1.0/tabsets.js"></script>
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
-
-<!-- code folding -->
-
-
-
-
 
 
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -156,26 +105,22 @@ $(document).ready(function () {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">ashlar</a>
+      <a class="navbar-brand" href="index.html">Transposable_element</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="license.html">License</a></li>
-        <li><a href="https://github.com/jhsiao999/ashlar">GitHub</a></li>
+        <li><a href="https://github.com/simingz/transposable_element">GitHub</a></li>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
-
-
-
-<h1 class="title toc-ignore">Untitled</h1>
+<div id="header">
+<h1 class="title">Untitled</h1>
 <h4 class="author"><em>First Last</em></h4>
 <h4 class="date"><em>YYYY-MM-DD</em></h4>
-
 </div>
 
 <div id="TOC">
@@ -185,8 +130,8 @@ $(document).ready(function () {
 </ul>
 </div>
 
-<p><strong>Last updated:</strong> 2016-07-01</p>
-<p><strong>Code version:</strong> 3d475094ce73ae18d71f836b5a810bafc3520424</p>
+<p><strong>Last updated:</strong> 2016-08-01</p>
+<p><strong>Code version:</strong> f408af83feed76a02dfd4d78eec80dcd4887ca1d</p>
 <p>This is a template for writing reports with R Markdown.</p>
 <div id="section-title" class="section level2">
 <h2>Section title</h2>
@@ -196,8 +141,8 @@ $(document).ready(function () {
 <div id="session-information" class="section level2">
 <h2>Session information</h2>
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>R Under development (unstable) (2016-03-11 r70310)
-Platform: x86_64-apple-darwin13.4.0 (64-bit)
+<pre><code>R version 3.2.2 (2015-08-14)
+Platform: x86_64-apple-darwin11.4.2 (64-bit)
 Running under: OS X 10.10.5 (Yosemite)
 
 locale:
@@ -207,12 +152,12 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
-[1] knitr_1.13
+[1] knitr_1.11
 
 loaded via a namespace (and not attached):
- [1] magrittr_1.5    formatR_1.4     tools_3.3.0     htmltools_0.3.5
- [5] yaml_2.1.13     Rcpp_0.12.5     stringi_1.1.1   rmarkdown_0.9.6
- [9] stringr_1.0.0   digest_0.6.9    evaluate_0.9   </code></pre>
+ [1] magrittr_1.5    formatR_1.2.1   tools_3.2.2     htmltools_0.2.6
+ [5] yaml_2.1.13     stringi_1.0-1   rmarkdown_0.8.1 stringr_1.0.0  
+ [9] digest_0.6.9    evaluate_0.8   </code></pre>
 </div>
 
 
@@ -240,8 +185,6 @@ $(document).ready(function () {
 });
 
 </script>
-
-
 
 </div>
 
