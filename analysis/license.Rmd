@@ -17,13 +17,11 @@ The site layout is modeled after the [RMarkdown][rmarkdown] tutorial site.
 RMarkdown package is used to create our custom template and also to 
 customize our HTML output. 
 
-Special thanks [John Blischak][john-site] at the University of Chicago 
-for sharing his workflow template. Our workflow was inspired by his [site][singleCellSeq] 
-that documents the steps for preprocessing and statistical analysis 
-in a project that investigates experimental artifacts in single-cell RNA-seq data. 
+Special thanks [Joyce Hsiao][joyce-site] at the University of Chicago 
+for sharing her workflow template -- ashlar [site][ashlar].
 
+[joyce-site]: http://jhsiao999.github.io/
 [rmarkdown]: http://rmarkdown.rstudio.com
-[john-site]: https://github.com/jdblischak
-[singleCellSeq]: https://github.com/jdblischak/singleCellSeq/
+[ashlar]: https://github.com/jhsiao999/ashlar
 
 

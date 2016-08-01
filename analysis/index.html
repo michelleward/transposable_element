@@ -10,14 +10,15 @@
 
 
 
+
 <title>Home</title>
 
-<script src="libs/jquery-1.11.0/jquery.min.js"></script>
+<script src="libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="libs/bootstrap-3.3.1/css/united.min.css" rel="stylesheet" />
-<script src="libs/bootstrap-3.3.1/js/bootstrap.min.js"></script>
-<script src="libs/bootstrap-3.3.1/shim/html5shiv.min.js"></script>
-<script src="libs/bootstrap-3.3.1/shim/respond.min.js"></script>
+<link href="libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<script src="libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 
 <style type="text/css">
 
@@ -74,6 +75,34 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 
 
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
 </head>
 
 <body>
@@ -88,12 +117,34 @@ code {
   color: inherit;
   background-color: rgba(0, 0, 0, 0.04);
 }
-img { 
-  max-width:100%; 
-  height: auto; 
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
 }
 </style>
+
+
 <div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script src="libs/navigation-1.1/tabsets.js"></script>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
 
 
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -116,30 +167,45 @@ img {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div id="header">
-<h1 class="title">Home</h1>
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Home</h1>
+
 </div>
 
 <div id="TOC">
 <ul>
-<li><a href="#notes">Notes</a></li>
-<li><a href="#analysis">Analysis</a></li>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#h3k9me3-chip-seq">H3K9me3 ChIP seq</a></li>
+<li><a href="#rna-seq">RNA seq</a></li>
+<li><a href="#regulation-of-te-and-gene-expression">Regulation of TE and gene expression</a></li>
 </ul>
 </div>
 
 <p><strong>Last updated:</strong> 2016-08-01</p>
-<p><strong>Code version:</strong> f408af83feed76a02dfd4d78eec80dcd4887ca1d</p>
-<div id="notes" class="section level2">
-<h2>Notes</h2>
+<p><strong>Code version:</strong> dd321e4aa1bfa6ac8aa62dce3ce2409ffd042723</p>
+<div id="overview" class="section level2">
+<h2>Overview</h2>
+<p>The basic idea is firstly to get an overview of how the distribution of the H3K9me3 mark differs between the 2 species and secondly whether there are particular transposable elements that are silenced specifically in one species and try to get at a mechanism for this as transposable element silencing is a rapidly evolving phenomenon. My collaborator can do the transposable element analysis in each species separately but we are likely to need help for the cross-species analysis. We would then ideally want to relate any differences in H3K9me3 occupancy with changes in gene expression.</p>
+</div>
+<div id="h3k9me3-chip-seq" class="section level2">
+<h2>H3K9me3 ChIP seq</h2>
 <ul>
-<li><a href="tutorial.html">Making a project site</a> (<a href="../docs/repo-setup-tutorial-stephens-lab-2015-12-03.pdf">2015-12-12 lab meeting slides</a>)</li>
+<li><p><a href="tutorial.html">H3K9me3 ChIP sequencing quality control</a></p></li>
+<li><p><a href="single-cell-pca.html">H3K9me3 differentially enriched regions in human and chimp</a></p></li>
 </ul>
 </div>
-<div id="analysis" class="section level2">
-<h2>Analysis</h2>
+<div id="rna-seq" class="section level2">
+<h2>RNA seq</h2>
 <ul>
-<li><a href="single-cell-pca.html">An exmaple: using PCA to visualize some single-cell data</a></li>
+<li><p><a href="tutorial.html">RNA sequencing quality control</a></p></li>
+<li><p><a href="single-cell-pca.html">Differentailly expressed genes in human and chimp</a></p></li>
 </ul>
+</div>
+<div id="regulation-of-te-and-gene-expression" class="section level2">
+<h2>Regulation of TE and gene expression</h2>
 </div>
 
 
@@ -167,6 +233,8 @@ $(document).ready(function () {
 });
 
 </script>
+
+
 
 </div>
 

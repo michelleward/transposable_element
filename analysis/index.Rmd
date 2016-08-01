@@ -7,10 +7,19 @@ title: "Home"
 **Code version:** `r system("git log -1 --format='%H'", intern = TRUE)`
 
 
-## Notes
+## Overview
+The basic idea is firstly to get an overview of how the distribution of the H3K9me3 mark differs between the 2 species and secondly whether there are particular transposable elements that are silenced specifically in one species and try to get at a mechanism for this as transposable element silencing is a rapidly evolving phenomenon. My collaborator can do the transposable element analysis in each species separately but we are likely to need help for the cross-species analysis. We would then ideally want to relate any differences in H3K9me3 occupancy with changes in gene expression.
 
-*  [Making a project site](tutorial.html) ([2015-12-12 lab meeting slides](../docs/repo-setup-tutorial-stephens-lab-2015-12-03.pdf))
+## H3K9me3 ChIP seq
 
-## Analysis
+*  [H3K9me3 ChIP sequencing quality control](tutorial.html) 
 
-*  [An exmaple: using PCA to visualize some single-cell data](single-cell-pca.html)
+*  [H3K9me3 differentially enriched regions in human and chimp](single-cell-pca.html)
+
+## RNA seq
+
+*  [RNA sequencing quality control](tutorial.html) 
+
+*  [Differentailly expressed genes in human and chimp](single-cell-pca.html)
+
+## Regulation of TE and gene expression
